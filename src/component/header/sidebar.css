@@ -1,0 +1,27 @@
+.DropMenu {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .DropMenu {
+    display: block;
+    position: absolute;
+
+    top: 80px;
+    width: 0;
+    background-color: grey;
+    height: 100%;
+    overflow: hidden;
+
+    height: 100vh;
+  }
+
+  .DropMenu.Show {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transition: all 850ms;
+    display: flex;
+    justify-content: center;
+  }
+}
